@@ -1,0 +1,30 @@
+
+<!--THIS IS THE VIEW FOR THE FOLLOW PAGE-->
+
+<div class="margin" data-ng-init="getUsers()"></div>
+
+<!--Stating of the container for the display of the user info-->
+<div class="container">
+  
+  <div class="row">
+     <div class="col-sm-4 col-offset-1 follow-title">Follow</div>
+  </div><!--End of row-->
+
+<div ng-repeat="users in user">
+  <div class="row">
+       <div class="col-sm-2 col-offset-2 follow-user-title" ng-if="users._id != currentUser._id">{{users.username}}</div>
+  </div><!--End of row-->
+
+  <div class="row" ng-if="users._id != currentUser._id">
+          <div class="col-sm-2 col-offset-2 follow-user-image">
+                <a ui-sref="userInformation" ng-click="addTheUser(users._id)"><img   ng-src="{{users.image}}"></a>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-success follow-user-button-follow" ng-click="follow(currentUser._id,users._id,users.image,currentUser.image,users.username,currentUser.username)" ng-hide="checkIsFollowing(users._id)">Follow</button>
+            <button class="btn btn-danger follow-user-button-unfollow" ng-show="checkIsFollowing(users._id)" ng-click="unfollow(users._id)">Unfollow</button>
+          </div>
+    </div><!--End of row-->
+ </div><!--End of ng-repeat-->
+  
+</div><!--End of container-->
+

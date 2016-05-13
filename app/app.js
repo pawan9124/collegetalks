@@ -1,0 +1,49 @@
+/***************************************************************************************************************************************************************************
+                         CONTROLLER TO RPOVIE ALL THE ROUTES THAT USED TO OPEN THE ROUTES AS THE CLICK OR DEMAND
+*****************************************************************************************************************************************************************************/
+
+angular.module('CollegeTalks',['ui.router','ngFileUpload'])
+.config(function($stateProvider,$urlRouterProvider){
+	$urlRouterProvider.otherwise('/');
+	$stateProvider
+	.state('signup',{
+		url:'/signup',
+		templateUrl:'app/signup/signup.html',
+		controller:'SignUpController'
+	})
+	.state('editprofile',{
+		url:'/editprofile',
+		templateUrl:'app/profile/Edit-profile.html',
+		controller:'EditProfileController'
+	})
+	.state('detail',{
+		url:'/detail',
+		templateUrl:'app/Profile-Detail/Detail.html',
+		controller:'DetailController'
+	})
+	.state('main',{
+		url:'/main',
+		templateUrl:'app/main/main.html',
+		controller:'MainController'
+	})
+	.state('follow',{
+		url:'/follow',
+		templateUrl:'app/follow/follow.html',
+		controller:'FollowController'
+	})
+	.state('userInformation',{
+       url:'/userInformation',
+       templateUrl:'app/userInformation/userInformation.html',
+       controller:'UserInformationController'
+	})
+	.state('messages',{
+		url:'/messages',
+		templateUrl:'app/messages/message.html',
+		controller:'MessageController'
+	})
+	.state('sentMessages',{
+		url:'/sentMessages',
+		templateUrl:'app/SentMessages/SentMessages.html',
+		controller:'SentMessagesController'
+	});
+});

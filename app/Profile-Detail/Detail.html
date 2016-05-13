@@ -1,0 +1,68 @@
+<div class="margin" data-ng-init="viewUser()"></div>
+
+
+<!--Start of the container for the detail-->
+<div class="container">
+   <div class="row border">
+<!--*************************************************-->
+<!-- This is the start of the 1st col-sm-4-->
+     <div class="col-sm-4 border">
+        <div class="row border">
+          <div class="col-sm-12 border">
+             <p class="detail-username">{{detail.username}}</p>
+          </div><!--End of the username col-->
+        </div><!--End of the  username row-->
+      
+      <div class="row border"> 
+          <div class="col-sm-12 border">
+             <img class="detail-profile-image" ng-src="{{detail.image}}">
+          </div><!--End of the col of image-->
+      </div><!--End of the row of image-->
+
+     </div><!--End of the 1st col-sm-4-->
+<!--************************************************-->
+<!--This is the start of the 2nd col-sm-4-->
+     <div class="col-sm-4 border "  >
+
+        <div class="row border">
+          <div class="col-sm-12 border">
+           <p class="detail-username">Followers</p>
+          </div><!--End of the col-sm-12 border-->
+        </div><!--End of the followers row-->
+
+
+        <div class="row border" ng-repeat="detail1 in detail.followers">
+           <div class="col-sm-12 border">
+             <a ui-sref="userInformation" ng-click="addTheUser(detail1.userId)">
+                 <img class="detail-user-image" ng-src="{{detail1.followersImage}}">
+                 <span class="detail-user-username">{{detail1.username}}</span>
+             </a>
+           </div><!--End of the followers col-->
+        </div><!--End of the row followers-->
+
+     </div><!--End of the 2nd col-sm-4-->
+
+ <!--************************************************-->
+ <!--This is the start of the 3rd col-sm-4-->
+     <div class="col-sm-4 border">
+        
+          <div class="row border">
+           <div class="col-sm-12 border">
+              <p class="detail-username">Following</p>
+           </div><!--End of the col-sm-12-->
+          </div><!--End of the following row-->
+
+          <div class="row border">
+            <div class="col-sm-23 border" ng-repeat="detail2 in detail.following">
+              <a ui-sref="userInformation" ng-click="addTheUser(detail2.userId)">
+                 <img class="detail-user-image" ng-src="{{detail2.followingImage}}">
+                 <span class="detail-user-username">{{detail2.username}}</span>
+              </a>
+            </div><!--End of the following col-->
+          </div><!--End of the following-->
+
+     </div><!--End of the 3rd col-sm-4-->
+
+   </div><!--End of the main row-->
+</div><!--End of the container-->
+ 

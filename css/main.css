@@ -1,0 +1,593 @@
+
+/*The section is for the navigation bar*/
+.navbar-inverse{
+	background-color:black;
+	height:70px;
+
+}
+.logo img{
+ height:70px;
+ width:70px;
+}
+
+.border{
+	border:1px solid red;
+}
+/* For the login input*/
+#nav-content .input-align{
+	text-align:center;
+	vertical-align:center;
+
+}
+#nav-content .input-align input{
+	margin-top:10px;
+	color:black;
+	border-radius:5px;
+}
+#nav-content .login-button-align{
+	margin-top:10px;
+	text-align:left;
+}
+#nav-content .input-align button{
+	margin-top:10px;
+}
+.nav-home{
+	color:#cc0000;
+}
+.nav-profile{
+	color:#cc0000;
+}
+.nav-follow{
+	color:#cc0000;
+}
+.nav-message{
+	color:#cc0000;
+}
+.nav-logout{
+	color:#cc0000;
+}
+
+/*For the index page*/
+
+.website-heading{
+
+ margin-top:150px;
+  text-align:center;
+}
+
+.account-btn{
+	text-align: center;
+}
+footer{
+  width:100%;
+	position:absolute;
+	bottom:0px;
+	height:3em;
+	background-color:black;
+
+}
+
+.form-control{
+	background-color:white;
+
+}
+@media screen and (max-width:768px){
+
+	footer{
+  width:100%;
+	position:relative;
+	
+	height:3em;
+	background-color:black;
+
+}
+.navbar{
+	height:260px;
+}
+.login-input{
+	height:30px;
+}
+.website-heading{
+ margin-top:300px;
+}
+}
+/*for the index front page*/
+ .index-background{
+	background-image: url('../images/banner1.jpg');
+}
+
+/*for the signup page*/
+.signup-page-input{
+	width:600px;
+	border-radius:5px;
+}
+.signup-button{
+	text-align:center;
+}
+.Email-title{
+	color:#c8c8c8;
+}
+.Password-title{
+	color:#c8c8c8;
+}
+.userCreated{
+	
+	background-color:#c8c8c8;
+	color:#cc0000;
+	padding:10px 10px;
+	border-radius:5px;
+	height:50px;
+	width:50px;
+}
+.userCreatedAlign{
+	text-align:center;
+	margin-top:10px;
+}
+.userExists{
+	
+	margin-top:14px;
+}
+@media screen and (max-width:768px){
+	.index-background{
+         width:100%;
+         height:auto;
+	}
+}
+
+/*For the homepage */
+.home-nav-text{
+		text-align:center;
+		padding:15px;
+
+}
+.home-nav-text a{
+	color:white;
+	text-decoration:none;
+}
+
+.message-noti{
+	background-color:#cc0000;
+	height:24px;
+	width:24px;
+	border-radius:50%;
+	color:white;
+}
+#postbox textarea{
+
+	height:100px;
+}
+
+#userimage img{
+	height:80px;
+	width:80px;
+}
+
+.section-images img{
+	height:30px;
+	width:30px;
+}
+
+.section-text{
+	padding:25px;
+}
+.section-comments{
+	background-color:#f5f7f4;
+}
+.section-comments img{
+	height:30px;
+	width:30px;
+}
+.section-username{
+	color:#cc0000;
+	text-align:bottom;
+}
+.margin{
+	margin-top:100px;
+}
+.bottom-border
+{
+	border-bottom:1px solid lightgrey;
+}
+.select-size{
+	width:150px;
+}
+
+
+.homepage-user-container{
+	background-color:green;
+}
+.homepage-username{
+	text-align:right;
+	color:#cc0000;
+}
+.homepage-userImage{
+	text-align:right;
+}
+.homepage-userText{
+	background-color:#f5f7f4;
+}
+.homepage-postbox{
+	border:1px solid #ccfbfd;
+}
+.website-heading h1{
+	color:  #c8c8c8;
+}
+.edi1t_paragraph{
+	margin-left:490px;
+	margin-top:-130px;
+
+}
+@media screen and (max-width:768px){
+	.home-nav-text{
+		height:20px;
+	}
+	.margin{
+		margin-top:300px;
+	}
+
+	.homepage-username{
+	text-align:left;
+	color:#cc0000;
+}
+.homepage-userImage{
+	text-align:left;
+}
+
+}
+/*The following styles used for the Edit profile page */
+
+.pro-username{
+
+	font-size:30px;
+	color:#cc0000;
+	font-weight:bold;
+	font-family:sans-serif;
+
+}
+.pro-image img{
+	height:250px;
+	width:250px;
+}
+.pro-title{
+	color:#cc0000;
+	font-family:sans-serif;
+	font-size:20px;
+}
+.pro-text-align{
+	text-align:right;
+	height:50px;
+	}
+
+.pro-button{
+	text-align:center;
+}
+.pro-change-button{
+	top:450px;
+	position:absolute;
+	z-index:1;
+}
+
+.edit-button{
+	text-align:right;
+}
+.pro-load-data{
+	font-size:20px;
+	font-family:sans-serif;
+}
+
+.followers-image{
+	height:25px;
+	width:25px;
+}
+.followers-username{
+	color:blue;
+}
+.follows-message{
+	color:black;
+}
+.picAlert{
+	margin-top:90px;
+}
+.edit-profile-image{
+	height:400px;
+	width:300px;
+	box-shadow:4px 4px 3px #d9e9ea;
+}
+@media screen and (max-width:768px){
+	.pro-text-align{
+	text-align:left;
+}
+}
+.pro-alert{
+	background-color:#cc0000;
+	color:white;
+	border-radius:2px;
+	padding:3px 3px;
+}
+
+/*The following title is for the Follow Pages*/
+
+.follow-title{
+	font-size:30px;
+	font-family:sans-serif;
+	font-weight:bold;
+}
+.follow-user-title{
+	font-size:20px;
+	color:#cc0000;
+	font-family:sans-serif;
+	
+}
+.follow-user-image img{
+  height:100px;
+  width:100px;
+}
+.follow-user-button-follow {
+
+width:170px;
+}
+.follow-user-button-unfollow {
+width:170px;
+}
+
+/*The following title is for the Follow Pages*/
+
+.follow-title{
+	font-size:30px;
+	font-family:sans-serif;
+	font-weight:bold;
+}
+.follow-user-title{
+	font-size:20px;
+	color:#cc0000;
+	font-family:sans-serif;
+	
+}
+.follow-user-image img{
+  height:100px;
+  width:100px;
+}
+.follow-user-button {
+
+width:170px;
+}
+/*This style is for the detail page*/
+.detail-username{
+
+	color:#cc0000;
+	font-family:sans-serif;
+	font-size:24px;
+}
+
+.detail-user-image{
+	height:80px;
+	width:80px;
+	margin-top:2px;
+}
+.detail-user-username{
+
+	font-family:sans-serif;
+	font-size:18px;
+	color:#cc0000;
+}
+.detail-profile-image{
+	height:400px;
+	width:300px;
+	box-shadow:4px 4px 3px #d9e9ea;
+}
+
+/*For the Messages page*/
+
+.messages-title{
+	font-family:sans-serif;
+	font-size:34px;
+	color:#cc0000;
+}
+
+.message-sent-button{
+ text-align:right;
+}
+
+.messages-status{
+	font-family:sans-serif;
+	font-size:24px;
+	color:#454545;
+	text-align:center;
+}
+
+.messages-pics{
+	text-align:center;
+}
+.messages-pics img{
+	height:80px;
+	width:80px;
+
+}
+.message-image-align{
+	margin-top:-15px;
+	text-align:right;
+}
+.borderline{
+	border-bottom:1px solid grey;
+}
+.message-username{
+	font-size:14px;
+	color:#cc0000;
+	font-family:sans-serif;
+	text-align:right;
+}
+.message-image{
+	height:50px;
+	width:50px;
+
+}
+.reply-image{
+	height:50px;
+	width:50px;
+}
+.reply-username{
+	text-align:left;
+
+}
+.message-date span{
+	text-align:right;
+}
+.messageUnread{
+	color:red;
+}
+.replyMessageUnread{
+	color:orange;
+}
+.disabled-viewed{
+	cursor:none;
+}
+.message-content{
+	margin-top:15px;
+}
+
+
+@media screen and (max-width:768px){
+.message-username{
+	font-size:14px;
+	color:#cc0000;
+	font-family:sans-serif;
+	text-align:left;
+}
+.message-image-align{
+	margin-top:-15px;
+	text-align:left;
+}
+}
+/*For the userInformation page*/
+.userInfo-title{
+	color:#cc0000;
+	font-family:sans-serif;
+	font-size:19px;
+}
+
+
+.userInfo-heading{
+	color:#cc0000;
+	font-family:sans-serif;
+	font-size:22px;
+}
+.userInfo-bio{
+	color:#454545;
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:18px;
+}
+.userInfo-following{
+	color:#cc0000;
+	font-family:sans-serif;
+	font-size:22px;
+}
+.userInfo-following-image img{
+	height:100px;
+	width:100px;
+}
+.userInfo-following-username{
+	color:#cc0000;
+	font-family:sans-serif;
+	font-size:14px;
+}
+.userInfo-image{
+
+	height:400px;
+	width:300px;
+	box-shadow:4px 4px 3px #d9e9ea;
+}
+.userInfo-bio-background{
+	margin-top:20px;
+   background-color:#f3fff0;
+}
+.userInfo-send-button{
+	margin-top:20px;
+}
+.userInfo-title
+{
+	color:#008040;
+	font-family:sans-serif;
+	font-size:22px;
+}
+.userInfo-text-align{
+	text-align:right;
+	height:50px;
+	}
+	.user-load-data{
+	font-size:20px;
+	font-family:sans-serif;
+}
+.userInfo-message-box{
+	margin-top:20px;
+}
+.sentMessage{
+	text-align:right;
+	margin-top:-30px;
+}
+@media screen and (max-width:768px){
+	.userInfo-text-align{
+	text-align:left;
+	height:50px;
+	}
+}
+/*for the index page*/
+.index-noti-image{
+	height:25px;
+	width:25px;
+}
+.index-noti-username{
+	font-family:sans-serif;
+	font-size:14px;
+	color:blue;
+
+}
+.index-background{
+	margin-top:0px;
+	background-image:url('../images/banner1450.jpg');
+	
+}
+.change-background{
+	background-color:white;
+}
+@media screen and (max-width:768px){
+	.index-background{
+		margin-top:0px;
+		background-image:url('../images/banner768.jpg');
+	}
+	.navbar{
+		height:250px;
+	}
+}
+@media screen and (max-width:480px){
+	.index-background{
+		margin-top:0px;
+		background-image:url('../images/banner480.jpg');
+	}
+}
+
+/*  ANIMATIONS
+
+===========================*/
+
+.spinner{
+	animation:spin 1s infinite;
+	-webkit-animation:spin 1s infinite;
+	-moz-animation:spin 1s infinite;
+	margin-top:50px;
+     margin-left:250px;
+	
+}
+.glyphicon-repeat {
+font-size:75px;
+}
+@keyframes spin{
+	from{ transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+
+@-webkit-keyframes spin{
+
+	from{ -webkit-transform:rotate(0deg);}
+	to{ -webkit-transform:rotate(0deg);}
+}
