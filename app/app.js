@@ -1,10 +1,10 @@
 /***************************************************************************************************************************************************************************
-                         CONTROLLER TO RPOVIE ALL THE ROUTES THAT USED TO OPEN THE ROUTES AS THE CLICK OR DEMAND
+                         CONTROLLER TO PROVIDE ALL THE ROUTES THAT USED TO OPEN THE ROUTES AS THE CLICK OR DEMAND
 *****************************************************************************************************************************************************************************/
 
 angular.module('CollegeTalks',['ui.router','ngFileUpload'])
 .config(function($stateProvider,$urlRouterProvider){
-	$urlRouterProvider.otherwise('/');
+	
 	$stateProvider
 	.state('signup',{
 		url:'/signup',

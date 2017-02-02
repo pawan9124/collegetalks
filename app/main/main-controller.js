@@ -131,7 +131,7 @@ $scope.isMessageStatus3=false;
    		$http.post('/api/waste/posts',request).success(function(response){
    			$scope.wastes=response;
    		}).error(function(error){
-        console.log(err);
+        console.log(error);
    		})
    	}
 
@@ -154,6 +154,7 @@ $scope.isMessageStatus3=false;
    	$http.post('/api/waste/get',data).success(function(response){
    		if(initial){
    			$scope.wastes=response;
+        console.log("here in initial");
         $scope.mainLoaded=true;
    		}else{
    			if(response.length > $scope.wastes.length){
@@ -162,6 +163,8 @@ $scope.isMessageStatus3=false;
    		}
    	})
    };
+
+   
    $interval(function(){
    	getWastes(false);
    	

@@ -545,6 +545,7 @@ width:170px;
 .index-background{
 	margin-top:0px;
 	background-image:url('../images/banner1450.jpg');
+	background-size:cover;
 	
 }
 .change-background{
@@ -554,6 +555,7 @@ width:170px;
 	.index-background{
 		margin-top:0px;
 		background-image:url('../images/banner768.jpg');
+		background-size:cover;
 	}
 	.navbar{
 		height:250px;
@@ -563,6 +565,7 @@ width:170px;
 	.index-background{
 		margin-top:0px;
 		background-image:url('../images/banner480.jpg');
+		background-size:cover;
 	}
 }
 
