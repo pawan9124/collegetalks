@@ -6,6 +6,7 @@ var Waste = require('../datasets/posts');
 var Message=require('../datasets/messages');
 var fs = require('fs-extra');
 var path = require('path');
+var mv = require('mv');
 
 /*******************************************************************************************
                 FUNCTION TO UPLOAD A PICTURE TO A DATABASE
@@ -18,7 +19,7 @@ module.exports.updatePhoto = function(req,res){
 	var tempPath = file.path;
 	var targetPath = path.join(__dirname,"../uploads/"+userId+file.name);
 	var savePath = "/uploads/"+ userId+file.name;
-	fs.rename(tempPath,targetPath,function(err){
+	mv(tempPath,targetPath,function(err){
 		if(err){
 			console.log(err)
 		}else{
